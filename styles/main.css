@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: space-around;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.fragment{
+    margin: 0 auto;
+}
+.fragment_img{
+    display: block;
+    margin: auto;
+    width: 22rem;
+    height: 27rem;
+    border: 0.5rem solid rgb(98, 0, 255);
+    box-shadow: -1px -1px 28px 10px rgba(98,0,255,0.75);
+-webkit-box-shadow: -1px -1px 28px 10px rgba(98,0,255,0.75);
+-moz-box-shadow: -1px -1px 28px 10px rgba(98,0,255,0.75);
+
+}
+.profile_title{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5rem;
+    word-break: keep-all;
+    text-align: center;
+
+}
+.myname{
+    color: aqua;
+    text-shadow: 0.2em 0.5em 0.1em rgb(4, 25, 255),
+    -0.3em 0.1em 0.1em rgb(30, 162, 182),
+    0.4em -0.3em 0.1em #006
+}
+.profile_description{
+    color: white;
+    line-height: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    word-break: break-all;
+}
+.letstart{
+    width: 25%;
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 10%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#phrase{
+    color: white;
+    font-style: oblique;
+}
