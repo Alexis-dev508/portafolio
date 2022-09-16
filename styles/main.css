@@ -41,7 +41,6 @@ body{
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 5rem;
-    word-break: break-all;
     text-align: center;
 
 }
@@ -139,5 +138,16 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     }
     .profile_title{
         font-size: 2rem;
+    }
+    .fragment_img{
+        margin-top: 80%;
+        width: 80vw;
+        height: 30%;
+    }
+    .pd1{
+        margin-top: 20%;
+    }
+    header{
+        display: none;
     }
 }
