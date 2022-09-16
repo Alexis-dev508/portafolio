@@ -4,10 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    
+}
 body{
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
+    background-repeat: round;
 }
 .container{
     display: grid;
@@ -16,6 +21,7 @@ body{
     align-content: space-around;
     margin: 0 auto;
     padding-top: 5%;
+    height: 100vh;
 }
 .fragment{
     margin: 0 auto;
@@ -35,7 +41,7 @@ body{
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 5rem;
-    word-break: keep-all;
+    word-break: break-all;
     text-align: center;
 
 }
@@ -49,7 +55,7 @@ body{
     color: white;
     line-height: 1.5rem;
     width: 80%;
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
     word-break: break-all;
 }
@@ -57,13 +63,81 @@ body{
     width: 25%;
     background-color: aqua;
     padding: 1rem;
-    border-radius: 10%;
+    border-radius: 15%;
     font-size: 1rem;
     font-weight: bold;
     margin: 0 auto;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 #phrase{
     color: white;
     font-style: oblique;
+}
+.highligth{
+    color: aqua !important;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding-top: 10%;
+}
+.joistick{
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    width: 80%;
+
+}
+
+th, td{
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+}
+th{
+    background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+}
+.header__nav{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.366);
+    padding: 1.5rem;
+    position: fixed;
+
+}
+.header__nav__ul{
+    color:white;
+    list-style: none;
+    display: inline-flex;
+}
+.header__nav__ul--li{
+    margin: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+.header__nav__a{
+    text-decoration: none;
+}
+.header__nav__a:hover{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: white;
+    border-radius: 5%;
+}
+@media screen and (max-width: 450px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .profile_title{
+        font-size: 2rem;
+    }
 }
